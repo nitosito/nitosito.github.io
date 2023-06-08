@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nursery</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+   
+    <link href="/Style/style2.css" rel="stylesheet" type="text/css"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container ">
+        <br>
+        <br>
+        <div class="card text-center">
+          <img src="..." class="card-img" alt="...">
+          <h5 class="card-header">Formulario de registro de plantas</h5>
+          <div class="card-body">
+            
+            <br>
+            <label for="">Nombre del planta: </label><br>
+            <input type="text" id="txtinst"><br>
+            <label for="">id: </label><br>
+            <input type="text" id="txtnit"><br>
+            <label for="">Descripcion: </label><br>
+            <input type="text" id="txtdir"><br>
+            <label for="">Precio: </label><br>
+            <input type="tel" id="txtphone">
+            <br>
+            <br>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Seleccione imagen de la planta</label>
+              <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" accept=".jpg, .jpeg, .png, image/*;capture=camera." name="userPhoto" single />
+              <i class="glyphicon glyphicon-fire form-control-feedback"></i>
+              <input type="text" id="response" class="form-control" placeholder="Base-64 value" />
+              <i class="glyphicon glyphicon-globe form-control-feedback"></i>
+            </div>
+            <br>
+            <br>
+            <input class="btn-primary"type="submit" value="Registrar" id="btnreg">
+          </div>
+        </div>
+        <br>
+        <article>
+          <label for="inputPassword2" class="visually-hidden"># identificación</label>
+          <input type="number" class="form-control" id="inputcedula" placeholder="ID">
+          <br>
+          <input type="button" value="Search" id="btnsearch">
+        </article>
+    </div>
+    <br>
+    <br>
+    <div class="container" id="container1">
+
+    </div>
+
+    <script type="module" src="../Controllers/registro_unico.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script type="module" src="../Controllers/base64.js"></script>
+   
+  </body>
+</html>
